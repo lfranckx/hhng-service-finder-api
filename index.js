@@ -3,7 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: 'https://lfranckx.github.io' }));
 
 app.get('/stylistsAPI', async (req, res) => {
   const apiUrl = 'https://www.hairhasnogender.com/_functions/stylistsAPI';
