@@ -11,6 +11,8 @@ app.get('/stylistsAPI', async (req, res) => {
         const response = await axios.get(apiUrl, {
         headers: req.headers,
         });
+        console.log('response headers...', response.headers);
+        console.log('response data...', response.data);
         res.set(response.headers);
         res.send(response.data);
     } catch (error) {
