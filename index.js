@@ -16,6 +16,7 @@ app.get('/stylistsAPI', async (req, res) => {
         res.set(response.headers);
         res.send(response.data);
     } catch (error) {
+        console.log('catch error...', error);
         res.status(error.response.status).send(error.response.data);
     }
 });
