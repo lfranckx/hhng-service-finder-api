@@ -5,6 +5,10 @@ const cors = require('cors');
 const app = express();
 app.use(cors({ origin: 'https://lfranckx.github.io' }));
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my API!');
+});
+
 app.get('/stylistsAPI', async (req, res) => {
     const apiUrl = 'https://www.hairhasnogender.com/_functions/Service-Finder-Stylists';
 
