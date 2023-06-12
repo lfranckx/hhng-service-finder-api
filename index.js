@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/stylistsAPI', async (req, res) => {
-    const apiUrl = 'https://www.hairhasnogender.com/_functions/stylists';
+    const apiUrl = 'https://www.hairhasnogender.com/_functions/registrants';
 
     // Log the incoming request URL and headers
     console.log('Incoming request URL...', req.url);
